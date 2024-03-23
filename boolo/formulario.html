@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title> Login </title>
+</head>
+<body>
+    <h1 id="Login"> Login </h1>
+
+
+    <form>
+
+      <label for="nome"> Nome: </label> 
+      <input type="text" id="nome" placeholder=" Digite seu nome completo" /> <br />
+      
+      <label for="email"> E-mail:</label>
+      <input type="email" id="email" placeholder="seunome@gmail.com" /> <br />
+      
+      <button type="submit" href="#bolosimples"> Enviar </button>
+      <input type="reset">
+      <link rel="stylesheet" href="../stylesheet.css"> 
+    </form>
+
+    <hr />
+
+      <div>
+        <h3 class="Caixa"> Caixa de Busca </h3>
+        <label for="keywords_id">Busca</label>
+        <input id="keywords_id" name="keywords" type="search">
+        <input id="botao-id" type="submit" value="Enviar">
+      </div>
+      <div>
+        <h3 class="Caixa">Caixa de Números</h3>
+        <label for="numero" type="number" placeholder="Ex: 57" /> <br /> <br />
+        <label for="phone"> Telefone </label>
+        <input id="phone_id" type="tel" placeholder="(99) 99999-9999" />
+      </div>
+      <div>
+        <label for="label_id">Volume de água do reservatorio </label>
+        <input id="idade_id" type="range" value="8" min="8" max="120" />
+      </div>
+      <div>
+        <button type="submit"> Enviar </button>
+      </div> <br />
+      <h3 class="Caixa"> Criar Usuário e Senha </h3>
+      <div>
+        <label for="email"> E-mail </label>
+        <input type="email" id="email" placeholder="seu melhor email" required />
+      </div>
+      <div>
+        <label for="Senha_id"> Senha: </label>
+        <input id="Senha_id" name="Senha" type="password" required /> <br />
+        <label for=""> A senha deve conter 8 caracteres (numero letra e caractere especial) </label> <br /> <br />
+        <label for="Senha_id"> Confirme sua senha: </label>
+        <input id="Confirma-senha" name="senha" type="password" required />
+        <input id="botao_id" type="submit" value="Enviar" />
+      </div>
+      <h3 class="Caixa"> Caixas de Datas e Horas </h3>
+      <div>
+        <h4> Data sem Fuso Horário </h4>
+        <input id="Data_id" name="data" type="date" />
+        <h4> Data e Hora sem Fuso Horário </h4>
+        <input id="data_hora_id" name="data-hora" type="datetime-local" />
+        <h4> Mês sem Fuso Horário </h4>
+        <input id="mes_id" name="mes" type="month" />
+        <h4> Hora sem Fuso Horário </h4>
+        <input id="semana_id" name="semana" type="week" />
+      </div>
+      <hr />
+      
+      <h3 class="Caixa"> Caixas de Check, Radio e Select </h3>
+      <div>
+        <h4> Check Box - Habilidades em Programação </h4>
+        HTML5 <input id="html5_id" name="linguagens" type="checkbox" value="HTML5" />
+        CSS3 <input id="css3_id" name="linguagens" type="checkbox" value="CSS3" />
+        JS <input id="javascript_id" name="linguagens" type="checkbox" value="javascript" />
+        PHP <input id="php_id" name="linguagens" type="checkbox" value="PHP" />
+        Java <input id="java_id" name="linguagens" type="checkbox" value="java" />
+
+      <fieldset>
+        <legend>Navegadores </legend>
+        <h4> Radio Button - Navegador Preferido </h4>
+        <ol>
+          <li><input id="chrome_id" name="Navegadores" type="radio" value="chrome" >Chrome</li>
+          <li><input id="firefox_id" name="Navegadores" type="radio" value="firefox" />Firefox</li>
+          <li><input id="opera_id" name="Navegadores" type="radio" value="opera" />Opera</li>
+          <li><input id="safari_id" name="Navegadores" type="radio" value="Safari" />Safari</li>
+          <li><input id="edge_id" name="Navegadores" type="radio" value="Edge" />Edge</li>
+          <li><input id="ie9_id" name="Navegadores" type="radio" value="Internet Explorer 9" />Internet Explorer 9</li>
+          <li><input id="nenhum_id" name="Navegadores" type="radio" value="none" />Outro(a)...</li>
+        
+      </fieldset>
+        </ol>
+      </div>
+      <div>
+        <h4 class="Caixa">Lista Drop-Down - Select Button </h4>
+        <select id="uf" name="uf" required>
+          <option value=""> Escolha um estado: </option>
+          <option value="DF"> DF - Distrito Federal </option>
+          <option value="GO">GO - Goiás </option>
+          <option value="SP"> SP - São Paulo </option>
+          <option value="RJ">RJ - Rio de Janeiro </option>
+        </select>
+        <input id="botao-id" type="submit" value="Enviar" />
+      </div>
+      <hr />
+      <div>
+        <h2 class="Caixa">Botões</h2>
+        <h4>Botão Enviar</h4>
+        <input id="botao-id" type="submit" value="Enviar" />
+        <h4>Botão Resetar </h4>
+        <input id="botao-id2" type="reset" value="reiniciar" />
+        <h4>Botão de Upload</h4>
+        <input id="botao-id3" type="file" value="file" />
+        <h4>Botão Genérico </h4>
+        <button id="carregar" type="button" value="carregar">Carregar Dados </button>
+      </div>
+      <br />
+    </form>
+</body>
+</html>
